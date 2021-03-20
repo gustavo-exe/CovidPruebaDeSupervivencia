@@ -1,0 +1,15 @@
+.Contenedor
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 90vh;
+}
+
+.ContenedorPie
+{
+    min-width:70vw;
+    
+    
+}

@@ -1,11 +1,12 @@
 import './App.css';
-import Home from "./components/pages/Home";
-
+import NavBar from "./components/NavBar/NavBar";
+import PieChart from "./components/Charts/PieChart";
 
 function App() {
   return (
       <div className="App">
-        <Home/>
+        <NavBar/>
+        <PieChart/>
       </div>
   );
 }
