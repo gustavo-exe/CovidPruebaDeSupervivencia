@@ -1,20 +1,15 @@
 import './App.css';
-import Covid from './components/pages/CovidSupervivencia/Covid';
+import Home from "./components/pages/Home";
 
 
 function App() {
   return (
       <div className="App">
-        <header className="App-header">
-          <p>
-            covid prueva de supervivencia
-          </p>
-          <p>
-            <Covid></Covid>
-          </p>
-        </header>
+        <Home/>
       </div>
   );
 }
+
+
 
 export default App;

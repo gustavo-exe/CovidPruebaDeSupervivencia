@@ -1,0 +1,35 @@
+nav{
+    height: 7%;
+    display: flex;
+    padding: 1vw;
+    align-items: center;
+    justify-content: flex-start;
+    background: #1B1D1C;
+    color: #fafbfb;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+span
+{
+    color: #8CFF00;
+}
+
+.logoCovid
+{
+    background: transparent url('../../assets/LogoCovid_Green.png') no-repeat bottom center ;
+    height: 10vw;
+    width: 10vw;
+    background-size: cover;
+}
+
+/*Movil*/
+@media only screen
+and (min-width: 320px)
+and (max-width: 736px) {
+    h1{
+        font-size: 1rem;
+    }
+}
