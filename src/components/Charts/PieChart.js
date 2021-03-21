@@ -33,6 +33,9 @@ function PieChart() {
     return (
         <div className="Contenedor">
             <div className="ContenedorPie" >
+            <font face="Courier New">
+            <font size="8"> Honduras</font>
+            </font>
                 <Pie data={chartData} options={{responsive:true}} legend={{position: 'left'}} ></Pie>
             </div>
         </div>
