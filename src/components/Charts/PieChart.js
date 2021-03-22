@@ -7,7 +7,10 @@ function PieChart({covidDatos}) {
   let confirmed = covidDatos.datos.map((elemento)=>{ return(elemento[0].confirmed)});
   let critical = covidDatos.datos.map((elemento)=>{ return(elemento[0].critical)});
   let deaths = covidDatos.datos.map((elemento)=>{ return(elemento[0].deaths)});
-  //console.log("confirmer",confirmed,"critical",critical,"Deaths",deaths);
+  
+  //Si se descomenta y comenta la siquiente linea (13)
+  //o carga de nuevo este componente aparecen los datos ya en el grafico
+  console.log("confirmer",confirmed,"critical",critical,"Deaths",deaths);
 
     const [chartData, setCharData] = useState();
     
@@ -19,7 +22,7 @@ function PieChart({covidDatos}) {
           
           datasets:[
             {
-                data: [critical,deaths,confirmed],
+                data: [critical[0],deaths[0],confirmed[0]],
                 backgroundColor:[
                 '#4E9100','#6BC300','#8CFF00'
                 ],
@@ -37,6 +40,9 @@ function PieChart({covidDatos}) {
     return (
         <div className="Contenedor">
             <div className="ContenedorPie" >
+            <font face="Courier New">
+            <font size="8"> Honduras</font>
+            </font>
                 <Pie data={chartData} options={{responsive:true}} legend={{position: 'left'}} ></Pie>
             </div>
         </div>
