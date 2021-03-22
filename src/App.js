@@ -13,19 +13,19 @@ function App() {
         datos:[]
     }
   );
-  const eliminandoBaseDeDatos=()=>
+  const EliminandoBaseDeDatos=()=>
   {
     FireBaseInit.database().ref('Covid').remove();
   }
 
   useEffect(
     ()=>{
-      eliminandoBaseDeDatos();
+      EliminandoBaseDeDatos();
 
       const covidRef = FireBaseInit.database().ref('Covid').orderByKey().limitToLast(100);
       covidRef.on('child_added', (snapshot) => 
       {
-        let newDato = { ...snapshot.val(), fb_id: snapshot.key };
+        let newDato = { ...snapshot.val()};
         let newDatos = covidApiDato.datos;
         newDatos.push(newDato);
         setCovidApiDato({...covidApiDato, todos: newDatos});
