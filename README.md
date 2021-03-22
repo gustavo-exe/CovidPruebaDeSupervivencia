@@ -3,8 +3,13 @@
 ## Acerca del proyecto
 Diseño de una plantilla en donde mostraremos datos de gran importancia acerca de la enfermedad COVID-19, ayudandonos de la Api COVID-19 data de la cual pudimos obetener los datos para luego mostrarlos en pantalla así mismo hicimos uso de firebase como nuestra base para almacenar dichos datos.
 
+## Contruido con
+* React
+* Css
+* Chart JS 2
+
 ## Mockup
-![Mockup](./src./assets.Mockup-Covid.png)
+![Mockup](./src/assets/Mockup-Covid.png)
 
 ## Antes de comenzar
 1. Ejecutar el siguente comando, para instalar los modulos y administrar las dependencias.
