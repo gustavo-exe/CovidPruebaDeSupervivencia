@@ -47,7 +47,7 @@ function App() {
   return (
       <div className="App">
         <NavBar/>
-        <PieChart/>
+        <PieChart covidDatos={covidApiDato} />
       </div>
   );
 }
