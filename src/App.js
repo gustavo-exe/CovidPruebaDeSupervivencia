@@ -5,7 +5,7 @@ import PieChart from "./components/Charts/PieChart";
 
 import getCountryCodeTotal from './components/Api/CovidApi';
 import FireBaseInit  from "./FireBaseInit";
-
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [covidApiDato, setCovidApiDato] = useState(
@@ -48,6 +48,7 @@ function App() {
       <div className="App">
         <NavBar/>
         <PieChart covidDatos={covidApiDato} />
+        <Footer/>
       </div>
   );
 }
