@@ -4,12 +4,13 @@ import { Pie } from "react-chartjs-2";
 
 function PieChart({covidDatos}) {
 
-  const confirmed = covidDatos.datos.map((elemento)=>{ return(elemento[0].confirmed)});
-  const critical = covidDatos.datos.map((elemento)=>{ return(elemento[0].critical)});
-  const deaths = covidDatos.datos.map((elemento)=>{ return(elemento[0].deaths)});
+  let confirmed = covidDatos.datos.map((elemento)=>{ return(elemento[0].confirmed)});
+  let critical = covidDatos.datos.map((elemento)=>{ return(elemento[0].critical)});
+  let deaths = covidDatos.datos.map((elemento)=>{ return(elemento[0].deaths)});
   //console.log("confirmer",confirmed,"critical",critical,"Deaths",deaths);
 
     const [chartData, setCharData] = useState();
+    
 
     const chart =() => {
 
