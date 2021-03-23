@@ -35,7 +35,7 @@ function PieChart({covidDatos}) {
 
     useEffect(()=>{
         chart();
-    },[]);
+    },covidDatos.datos[0]);
 
     return (
         <div className="Contenedor">
