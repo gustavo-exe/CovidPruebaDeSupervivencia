@@ -1,12 +1,24 @@
 # Covid Prueba de Supervivencia
+<div align="center">
+   Deployment: 
+</div>
+<div align="center">
+  <h3>
+    <a href="https://covidsupervivencia-ebc7f.web.app/">
+      Firebase
+    </a>
+  </h3>
+</div>
 
 ## Acerca del proyecto
-Diseño de una plantilla en donde mostraremos datos de gran importancia acerca de la enfermedad COVID-19, ayudandonos de la Api COVID-19 data de la cual pudimos obetener los datos para luego mostrarlos en pantalla así mismo hicimos uso de firebase como nuestra base para almacenar dichos datos.
+Diseño de una plantilla en donde mostraremos datos de manera grafica acerca de la enfermedad de COVID-19 en Honduras, ayudandonos de la Api COVID-19 data perteneciente a RapiApi de la cual obtiene los datos y se suben a Firebase para luego mostrarlos en pantalla por medio de la lectura de los guardado en Firebase.
 
 ## Contruido con
 * React
 * Css
 * Chart JS 2
+* Firebase
+* [Covid Api](https://rapidapi.com/Gramzivi/api/covid-19-data)
 
 ## Mockup
 ![Mockup](./src/assets/Mockup-Covid.png)
