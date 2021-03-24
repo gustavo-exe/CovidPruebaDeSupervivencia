@@ -8,8 +8,6 @@ function PieChart({covidDatos}) {
   let critical = covidDatos.datos.map((elemento)=>{ return(elemento[0].critical)});
   let deaths = covidDatos.datos.map((elemento)=>{ return(elemento[0].deaths)});
   
-  //Si se descomenta y comenta la siquiente linea (13)
-  //o carga de nuevo este componente aparecen los datos ya en el grafico
   console.log("confirmer",confirmed,"critical",critical,"Deaths",deaths);
 
     const [chartData, setCharData] = useState();
